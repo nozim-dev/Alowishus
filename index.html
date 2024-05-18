@@ -12,17 +12,20 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style/style.css" />
+    <script src="./assets/TailwindConfig/tailwind.config.js"></script>
   </head>
   <body>
-    <header class="bg-[#EEEFF1] pt-[24px]">
+    <header class="bg-[#EEEFF1] pt-[24px] lg1240:px-[8px]">
       <div
         class="flex justify-between max-w-[1240px] mx-auto gap-[12px] items-center"
       >
-        <div class="w-[126px] h-[50px]">
+        <div class="w-[126px] h-[50px] sm430:min-w-[96px] sm430:min-h-[38px]">
           <img class="w-full" src="./assets/images/logo.png" alt="" />
         </div>
         <div class="flex max-w-[756px] gap-[40px] items-center justify-between">
-          <nav class="flex items-center gap-[40px] justify-between">
+          <nav
+            class="flex items-center gap-[40px] justify-between lg910:hidden"
+          >
             <a
               class="font-medium text-[15px] font-[Jost] text-[#1b1b1d] hover:opacity-[.5]"
               href=""
@@ -48,13 +51,16 @@
               Alowishus Catering
             </a>
           </nav>
-          <div class="flex justify-between gap-[20px] items-center">
+          <div
+            class="flex justify-between gap-[20px] items-center sm430:gap-[10px]"
+          >
             <span
-              class="w-[56px] h-[56px] rounded-[50%] bg-[white] flex items-center justify-center cursor-pointer hover:opacity-[.7]"
+              class="w-[56px] h-[56px] rounded-[50%] bg-[white] flex items-center justify-center cursor-pointer hover:opacity-[.7] sm430:w-[36px] sm430:h-[36px] sm375:hidden"
             >
               <svg
                 width="20"
                 height="20"
+                class="sm430:w-[15px] sm430:h-[15px]"
                 viewBox="0 0 20 20"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +72,7 @@
               </svg>
             </span>
             <button
-              class="font-[Jost] text-[15px] font-medium leading-[173%] uppercase text-[#fff] rounded-[63px] w-[208px] px-[30px] py-[15px] bg-[#1b1b1d] hover:opacity-[.7]"
+              class="font-[Jost] text-[15px] font-medium leading-[173%] uppercase text-[#fff] rounded-[63px] w-[208px] px-[30px] py-[15px] bg-[#1b1b1d] hover:opacity-[.7] sm430:px-[15px] sm430:py-[12px]"
             >
               Buy gift vouchers
             </button>
@@ -75,23 +81,26 @@
       </div>
     </header>
     <main>
-      <section class="bg-[#EEEFF1] pt-[123px] pb-[130px]">
-        <div class="max-w-[1240px] mx-auto flex">
-          <div class="flex-1">
+      <section
+        class="bg-[#EEEFF1] pt-[123px] pb-[130px] lg1240:px-[8px] md874:pt-[30px] md750:pt-[55px]"
+      >
+        <div class="max-w-[1240px] mx-auto flex md670:flex-col md670:gap-[60px]">
+          <div class="flex-1 md670:text-center md670:max-w-[400px] md670:mx-auto">
             <h1
-              class="font-extrabold text-[124px] font-['Jost'] leading-[113%] text-[#1b1b1d] after:content-[url(./assets/images/mark.png)]"
+              class="font-extrabold text-[124px] font-['Jost'] leading-[113%] text-[#1b1b1d] after:content-[url(./assets/images/mark.png)] lg1010:text-[82px] md750:text-[62px] md670:text-[50px] md670:after:block md670:after:mt-[12px] sm375:text-[38px]"
             >
-              Alowishus Delicious Coffee
+              Alowishus <br class="hidden md670:block"> Delicious Coffee
             </h1>
             <p
-              class="mt-[30px] font-['Jost'] font-normal text-[24px] text-[#64646a]"
+              class="mt-[30px] font-['Jost'] font-normal text-[24px] text-[#64646a] lg1010:text-[22px]"
             >
-              A drink from the ‘My Alowishus’ bottled brews <br />
+              A drink from the ‘My Alowishus’ bottled brews
+              <br class="md874:hidden" />
               range OR grab one of our delicious coffee’s.
             </p>
-            <div class="mt-[60px] flex items-center gap-[30px]">
+            <div class="mt-[60px] flex items-center gap-[30px] sm375:flex-col">
               <button
-                class="w-[225px] bg-[#1b1b1d] py-[20px] px-[40px] rounded-[126px] font-['Jost'] font-medium text-[18px] leading-[167%] uppercase text-[#fff] hover:opacity-[0.7]"
+                class="w-[225px] bg-[#1b1b1d] py-[20px] px-[40px] rounded-[126px] font-['Jost'] font-medium text-[18px] leading-[167%] uppercase text-[#fff] hover:opacity-[0.7] md750:px-[16px] md750:py-[10px] md750:w-auto"
               >
                 Download App
               </button>
@@ -102,9 +111,9 @@
               </button>
             </div>
           </div>
-          <div class="w-full max-w-[700px] flex-1">
+          <div class="w-full max-w-[700px] flex-1 md670:max-w-[400px] md670:mx-auto">
             <img
-              class="w-full h-full object-full"
+              class="w-full h-full object-contain"
               src="./assets/images/hero.png"
               alt=""
             />
