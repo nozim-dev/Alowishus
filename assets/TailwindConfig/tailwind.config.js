@@ -13,6 +13,7 @@ tailwind.config = {
             md750: { 'max': "750px" },
             md726: { 'max': "726px" },
             md670: { 'max': "670px" },
+            sm500: { 'max': "500px" },
             sm452: { 'max': "452px" },
             sm430: { 'max': "430px" },
             sm408: { 'max': "408px" },
